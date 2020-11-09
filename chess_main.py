@@ -68,9 +68,6 @@ def main():
     game_state = chess_eng.GameState()
     #Load chess piece image files
     chess_board.load_images()
-    print(game_state.board_state)
-    print(chess_board.IMAGES)
-    
 
     #Keep window open unless user exits window
     running = True
@@ -83,11 +80,6 @@ def main():
         clock.tick(MAX_FPS)
         #Display the board
         p.display.flip()
-
-    #print(game_state.board_state)
-
-    #Draw the state of the board (pieces)
-    #chess_board.draw_pieces(game_state)
 
     return 0
 
